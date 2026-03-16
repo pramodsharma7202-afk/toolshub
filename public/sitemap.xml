@@ -1,201 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://toolshub.vercel.app/</loc>
+    <loc>https://toolshub-7ilx.vercel.app/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- PDF Tools -->
   <url>
-    <loc>https://toolshub.vercel.app/pdf-generator</loc>
+    <loc>https://toolshub-7ilx.vercel.app/pdf-generator</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/pdf-merge</loc>
+    <loc>https://toolshub-7ilx.vercel.app/pdf-merge</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/pdf-split</loc>
+    <loc>https://toolshub-7ilx.vercel.app/pdf-split</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/pdf-compress</loc>
+    <loc>https://toolshub-7ilx.vercel.app/pdf-compress</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/pdf-rotate</loc>
+    <loc>https://toolshub-7ilx.vercel.app/pdf-rotate</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/pdf-password</loc>
+    <loc>https://toolshub-7ilx.vercel.app/pdf-password</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/pdf-watermark</loc>
+    <loc>https://toolshub-7ilx.vercel.app/pdf-watermark</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/pdf-to-text</loc>
+    <loc>https://toolshub-7ilx.vercel.app/pdf-to-text</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/pdf-to-word</loc>
+    <loc>https://toolshub-7ilx.vercel.app/pdf-to-word</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/pdf-to-image</loc>
+    <loc>https://toolshub-7ilx.vercel.app/pdf-to-image</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/pdf-metadata</loc>
+    <loc>https://toolshub-7ilx.vercel.app/pdf-metadata</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/pdf-page-numbers</loc>
+    <loc>https://toolshub-7ilx.vercel.app/pdf-page-numbers</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/pdf-sign</loc>
+    <loc>https://toolshub-7ilx.vercel.app/pdf-sign</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/pdf-annotate</loc>
+    <loc>https://toolshub-7ilx.vercel.app/pdf-annotate</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Converters -->
   <url>
-    <loc>https://toolshub.vercel.app/word-to-pdf</loc>
+    <loc>https://toolshub-7ilx.vercel.app/word-to-pdf</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/excel-to-pdf</loc>
+    <loc>https://toolshub-7ilx.vercel.app/excel-to-pdf</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/image-to-pdf</loc>
+    <loc>https://toolshub-7ilx.vercel.app/image-to-pdf</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/webpage-to-pdf</loc>
+    <loc>https://toolshub-7ilx.vercel.app/webpage-to-pdf</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Word/Docs Tools -->
   <url>
-    <loc>https://toolshub.vercel.app/word-formatter</loc>
+    <loc>https://toolshub-7ilx.vercel.app/word-formatter</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/doc-to-docx</loc>
+    <loc>https://toolshub-7ilx.vercel.app/doc-to-docx</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/docx-to-doc</loc>
+    <loc>https://toolshub-7ilx.vercel.app/docx-to-doc</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/word-to-html</loc>
+    <loc>https://toolshub-7ilx.vercel.app/word-to-html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/template-generator</loc>
+    <loc>https://toolshub-7ilx.vercel.app/template-generator</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <!-- Developer/Other Tools -->
   <url>
-    <loc>https://toolshub.vercel.app/qr-generator</loc>
+    <loc>https://toolshub-7ilx.vercel.app/qr-generator</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/password-generator</loc>
+    <loc>https://toolshub-7ilx.vercel.app/password-generator</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/word-counter</loc>
+    <loc>https://toolshub-7ilx.vercel.app/word-counter</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/text-case-converter</loc>
+    <loc>https://toolshub-7ilx.vercel.app/text-case-converter</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/lorem-ipsum-generator</loc>
+    <loc>https://toolshub-7ilx.vercel.app/lorem-ipsum-generator</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/random-number-generator</loc>
+    <loc>https://toolshub-7ilx.vercel.app/random-number-generator</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/color-palette-generator</loc>
+    <loc>https://toolshub-7ilx.vercel.app/color-palette-generator</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/css-gradient-generator</loc>
+    <loc>https://toolshub-7ilx.vercel.app/css-gradient-generator</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/json-formatter</loc>
+    <loc>https://toolshub-7ilx.vercel.app/json-formatter</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/base64-encoder</loc>
+    <loc>https://toolshub-7ilx.vercel.app/base64-encoder</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/image-resizer</loc>
+    <loc>https://toolshub-7ilx.vercel.app/image-resizer</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/image-to-png</loc>
+    <loc>https://toolshub-7ilx.vercel.app/image-to-png</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/image-to-jpg</loc>
+    <loc>https://toolshub-7ilx.vercel.app/image-to-jpg</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/image-compressor</loc>
+    <loc>https://toolshub-7ilx.vercel.app/image-compressor</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolshub.vercel.app/uuid-generator</loc>
+    <loc>https://toolshub-7ilx.vercel.app/uuid-generator</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
