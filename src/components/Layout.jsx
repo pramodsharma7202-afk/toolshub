@@ -2,6 +2,35 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 
+const pdfTools = [
+  { path: '/pdf-generator', name: 'PDF Generator', icon: '📄' },
+  { path: '/word-to-pdf', name: 'Word to PDF', icon: '📝' },
+  { path: '/excel-to-pdf', name: 'Excel to PDF', icon: '📊' },
+  { path: '/image-to-pdf', name: 'Image to PDF', icon: '🖼️' },
+  { path: '/webpage-to-pdf', name: 'Webpage to PDF', icon: '🌐' },
+  { path: '/pdf-merge', name: 'PDF Merge', icon: '🔗' },
+  { path: '/pdf-split', name: 'PDF Split', icon: '✂️' },
+  { path: '/pdf-compress', name: 'PDF Compress', icon: '📉' },
+  { path: '/pdf-rotate', name: 'PDF Rotate', icon: '🔄' },
+  { path: '/pdf-password', name: 'PDF Password', icon: '🔒' },
+  { path: '/pdf-watermark', name: 'PDF Watermark', icon: '💧' },
+  { path: '/pdf-to-word', name: 'PDF to Word', icon: '📃' },
+  { path: '/pdf-to-image', name: 'PDF to Image', icon: '🖼️' },
+  { path: '/pdf-to-text', name: 'PDF to Text', icon: '📝' },
+  { path: '/pdf-metadata', name: 'PDF Metadata', icon: 'ℹ️' },
+  { path: '/pdf-page-numbers', name: 'PDF Page Numbers', icon: '#️⃣' },
+  { path: '/pdf-sign', name: 'Sign PDF', icon: '✍️' },
+  { path: '/pdf-annotate', name: 'Annotate PDF', icon: '🖍️' },
+]
+
+const wordTools = [
+  { path: '/word-formatter', name: 'Word Formatter', icon: '🧹' },
+  { path: '/doc-to-docx', name: 'DOC to DOCX', icon: '🔄' },
+  { path: '/docx-to-doc', name: 'DOCX to DOC', icon: '🔄' },
+  { path: '/word-to-html', name: 'Word to HTML', icon: '🌐' },
+  { path: '/template-generator', name: 'Template Generator', icon: '📋' },
+]
+
 const tools = [
   { path: '/qr-generator', name: 'QR Generator', icon: '⬜' },
   { path: '/password-generator', name: 'Password Generator', icon: '🔐' },
@@ -19,6 +48,27 @@ const tools = [
   { path: '/image-compressor', name: 'Image Compressor', icon: '📉' },
   { path: '/uuid-generator', name: 'UUID Generator', icon: '🆔' },
 ]
+
+const ToolSection = ({ title, tools, location, onClick }) => (
+  <li>
+    <div className="text-xs font-semibold text-blue-500 uppercase tracking-wider mt-4 mb-2 px-3">{title}</div>
+    {tools.map((tool) => (
+      <Link
+        key={tool.path}
+        to={tool.path}
+        onClick={onClick}
+        className={`flex items-center gap-3 px-3 py-2 rounded-xl transition-colors ${
+          location.pathname === tool.path
+            ? 'bg-blue-500 text-white'
+            : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
+        }`}
+      >
+        <span className="text-lg">{tool.icon}</span>
+        <span className="text-sm font-medium">{tool.name}</span>
+      </Link>
+    ))}
+  </li>
+)
 
 function Layout({ children, search, setSearch }) {
   const location = useLocation()
@@ -88,22 +138,9 @@ function Layout({ children, search, setSearch }) {
           
           <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">All Tools</h2>
           <ul className="space-y-1">
-            {tools.map((tool) => (
-              <li key={tool.path}>
-                <Link
-                  to={tool.path}
-                  onClick={() => setSidebarOpen(false)}
-                  className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-colors ${
-                    location.pathname === tool.path
-                      ? 'bg-blue-500 text-white'
-                      : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
-                  }`}
-                >
-                  <span className="text-lg">{tool.icon}</span>
-                  <span className="text-sm font-medium">{tool.name}</span>
-                </Link>
-              </li>
-            ))}
+            <ToolSection title="PDF Tools" tools={pdfTools} location={location} onClick={() => setSidebarOpen(false)} />
+            <ToolSection title="Word / Docs" tools={wordTools} location={location} onClick={() => setSidebarOpen(false)} />
+            <ToolSection title="Other Tools" tools={tools} location={location} onClick={() => setSidebarOpen(false)} />
           </ul>
         </div>
       </aside>
