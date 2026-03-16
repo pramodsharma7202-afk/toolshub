@@ -1,4 +1,6 @@
 User-agent: *
-Disallow:
+Allow: /
 
 Sitemap: https://toolshub-7ilx.vercel.app/sitemap.xml
+
+Crawl-delay: 1

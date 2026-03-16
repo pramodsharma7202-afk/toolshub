@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import GoogleAnalytics from './components/GoogleAnalytics'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
@@ -49,6 +50,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <GoogleAnalytics />
       <Analytics />
       <SpeedInsights />
       <Layout search={search} setSearch={setSearch}>

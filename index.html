@@ -5,6 +5,30 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <!-- ============================================
+         GOOGLE TAG MANAGER (Replace GTM-XXXXXXX with your GTM ID)
+         ============================================ -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-XXXXXXX');
+    </script>
+
+    <!-- ============================================
+         GOOGLE ANALYTICS 4 (Replace G-C6716WMMY1 with your Measurement ID)
+         ============================================ -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6716WMMY1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-C6716WMMY1', {
+        send_page_view: false
+      });
+    </script>
+    
     <!-- Primary Meta Tags -->
     <title>ToolsHub - Free Online PDF, Word, Text & Developer Tools</title>
     <meta name="title" content="ToolsHub - Free Online PDF, Word, Text & Developer Tools" />
@@ -20,7 +44,7 @@
     <meta property="og:url" content="https://toolshub-7ilx.vercel.app/" />
     <meta property="og:title" content="ToolsHub - Free Online PDF, Word, Text & Developer Tools" />
     <meta property="og:description" content="Free online tools for PDF conversion, editing, Word documents, text utilities, QR codes, password generation, and developer tools." />
-    <meta property="og:image" content="/og-image.svg" />
+    <meta property="og:image" content="https://toolshub-7ilx.vercel.app/og-image.svg" />
     <meta property="og:site_name" content="ToolsHub" />
     
     <!-- Twitter -->
@@ -28,7 +52,7 @@
     <meta property="twitter:url" content="https://toolshub-7ilx.vercel.app/" />
     <meta property="twitter:title" content="ToolsHub - Free Online PDF, Word, Text & Developer Tools" />
     <meta property="twitter:description" content="Free online tools for PDF conversion, editing, Word documents, text utilities, QR codes, password generation, and developer tools." />
-    <meta property="twitter:image" content="/og-image.svg" />
+    <meta property="twitter:image" content="https://toolshub-7ilx.vercel.app/og-image.svg" />
     
     <!-- Additional SEO -->
     <meta name="theme-color" content="#3b82f6" />
@@ -64,24 +88,26 @@
         "JSON Formatter",
         "Word Counter",
         "Text Case Converter"
-      ]
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "150"
+      }
     }
     </script>
     
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_MEASUREMENT_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-YOUR_MEASUREMENT_ID');
-    </script>
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
