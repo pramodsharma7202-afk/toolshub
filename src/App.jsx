@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Analytics } from "@vercel/analytics/react"
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
@@ -19,11 +21,14 @@ import ImageCompressor from './tools/ImageCompressor'
 import UUIDGenerator from './tools/UUIDGenerator'
 
 function App() {
+  const [search, setSearch] = useState('')
+
   return (
     <BrowserRouter>
-      <Layout>
+      <Analytics />
+      <Layout search={search} setSearch={setSearch}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home search={search} />} />
           <Route path="qr-generator" element={<QRCodeGenerator />} />
           <Route path="password-generator" element={<PasswordGenerator />} />
           <Route path="word-counter" element={<WordCounter />} />

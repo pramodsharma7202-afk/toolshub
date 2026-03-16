@@ -18,24 +18,33 @@ const tools = [
   { path: '/uuid-generator', name: 'UUID Generator', description: 'Generate unique identifiers', icon: '🆔' },
 ]
 
-function Home() {
+function Home({ search = '' }) {
+  const filteredTools = tools.filter(tool => 
+    tool.name.toLowerCase().includes(search.toLowerCase()) ||
+    tool.description.toLowerCase().includes(search.toLowerCase())
+  )
+
   return (
     <div>
       <h1 className="text-3xl font-bold text-gray-900 mb-2">Welcome to ToolsHub</h1>
       <p className="text-gray-500 mb-8">Your go-to toolkit for everyday tasks.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {tools.map((tool) => (
-          <Link
-            key={tool.path}
-            to={tool.path}
-            className="block p-6 bg-gray-50 border border-gray-200 rounded-xl hover:border-blue-400 hover:shadow-sm transition"
-          >
-            <div className="text-2xl mb-3">{tool.icon}</div>
-            <h2 className="text-lg font-semibold text-gray-900 mb-1">{tool.name}</h2>
-            <p className="text-gray-500 text-sm">{tool.description}</p>
-          </Link>
-        ))}
+        {filteredTools.length > 0 ? (
+          filteredTools.map((tool) => (
+            <Link
+              key={tool.path}
+              to={tool.path}
+              className="block p-6 bg-gray-50 border border-gray-200 rounded-xl hover:border-blue-400 hover:shadow-sm transition"
+            >
+              <div className="text-2xl mb-3">{tool.icon}</div>
+              <h2 className="text-lg font-semibold text-gray-900 mb-1">{tool.name}</h2>
+              <p className="text-gray-500 text-sm">{tool.description}</p>
+            </Link>
+          ))
+        ) : (
+          <p className="text-gray-500 col-span-full">No tools found matching "{search}"</p>
+        )}
       </div>
     </div>
   )
